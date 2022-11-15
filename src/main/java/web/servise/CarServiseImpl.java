@@ -6,16 +6,17 @@ import web.models.Car;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Component
 @Service
 
 public class CarServiseImpl implements CarService {
     private List<Car> cars;
 
-    public CarServiseImpl(){
+    public CarServiseImpl() {
         cars = new ArrayList<>();
-        for (int i =0; i<5; i++) {
-            cars.add(new Car(i,"Producer_"+i, "Model_"+i));
+        for (int i = 0; i < 5; i++) {
+            cars.add(new Car(i, "Producer_" + i, "Model_" + i));
         }
     }
 
